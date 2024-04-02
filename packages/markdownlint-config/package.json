@@ -1,0 +1,24 @@
+{
+  "name": "adorkable_wang_markdownlint-config",
+  "version": "0.0.0",
+  "main": "index.json",
+  "description": "文档规范",
+  "keywords": [
+    "adorkable_wang",
+    "markdown",
+    "lint"
+  ],
+  "author": "adorkable-wang",
+  "homepage": "https://github.com/adorkable-wang/coding-standard-engineering#readme",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adorkable-wang/coding-standard-engineering.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adorkable-wang/coding-standard-engineering/issues"
+  },
+  "peerDependencies": {
+    "markdownlint": "^0.34.0"
+  }
+}
