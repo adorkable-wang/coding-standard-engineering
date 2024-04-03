@@ -26,7 +26,10 @@
     "markdownlint": "^0.34.0",
     "pnpm": "^8.15.5",
     "typescript": "^5.4.3",
-    "vuepress": "^1.9.10"
+    "vue-template-compiler": "^2.7.16",
+    "vuepress": "^1.9.10",
+    "vuepress-plugin-one-click-copy": "^1.0.6",
+    "vuepress-plugin-zooming": "^1.1.8"
   },
   "dependencies": {
     "conventional-changelog-conventionalcommits": "^7.0.2"
