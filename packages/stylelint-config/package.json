@@ -1,5 +1,5 @@
 {
-  "name": "stylelint-config",
+  "name": "adorkable_wang_stylelint-config",
   "version": "0.0.0",
   "description": "CSS规范",
   "main": "index.js",
