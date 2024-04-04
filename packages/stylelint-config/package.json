@@ -1,0 +1,33 @@
+{
+  "name": "stylelint-config",
+  "version": "0.0.0",
+  "description": "CSS规范",
+  "main": "index.js",
+  "keywords": [
+    "adorkable_wang",
+    "style",
+    "lint"
+  ],
+  "author": "adorkable-wang",
+  "homepage": "https://github.com/adorkable-wang/coding-standard-engineering#readme",
+  "license": "ISC",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adorkable-wang/coding-standard-engineering.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adorkable-wang/coding-standard-engineering/issues"
+  },
+  "peerDependencies": {
+    "stylelint": ">=8.3.0",
+    "stylelint-scss": ">=2.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "stylelint": "^14.3.0",
+    "stylelint-scss": "^4.1.0"
+  }
+}
