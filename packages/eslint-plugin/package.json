@@ -1,0 +1,45 @@
+{
+  "name": "adorkable-wang-eslint-plugin",
+  "version": "0.0.0",
+  "description": "自定义eslint插件",
+  "scripts": {
+    "test": "jest",
+    "prepublishOnly": "npm run test"
+  },
+  "files": [
+    "configs/",
+    "rules/",
+    "README.md"
+  ],
+  "keywords": [
+    "adorkable-wang",
+    "eslint",
+    "eslint-plugin"
+  ],
+  "main": "src/index.js",
+  "author": "adorkable-wang",
+  "homepage": "https://github.com/adorkable-wang/coding-standard-engineering#readme",
+  "license": "ISC",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adorkable-wang/coding-standard-engineering.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adorkable-wang/coding-standard-engineering/issues"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "jest": "^29.5.0"
+  },
+  "dependencies": {
+    "fs-extra": "^11.2.0",
+    "require-all": "^3.0.0"
+  }
+}
