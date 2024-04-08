@@ -1,4 +1,11 @@
 #!/usr/bin/env node
+/*
+ * @Author: adorkable-wang
+ * @Date: 2024-04-06 15:52:53
+ * @FilePath: \coding-standard-engineering\packages\code-lint-cli\src\cli.ts
+ * @Description: code-lint-cli 命令行
+ * @module: 
+ */
 import path from 'path';
 import fs from 'fs-extra';
 import ora from 'ora';
@@ -6,6 +13,7 @@ import glob from 'glob';
 import { program } from 'commander';
 import spawn from 'cross-spawn';
 import { execSync } from 'child_process';
+
 import init from './actions/init';
 import scan from './actions/scan';
 import update from './actions/update';
@@ -34,12 +42,11 @@ const installDepsIfThereNo = async () => {
     log.info(`使用项目 Lint 配置，检测到项目未安装依赖，将进行安装（执行 ${npm} install）`);
     execSync(`cd ${cwd} && ${npm} i`);
   }
-};
-
+}
 program
   .version(PKG_VERSION)
   .description(
-    `${PKG_NAME} 是 印客学院前端编码规范工程化 的配套 Lint 工具，提供简单的 CLI 和 Node.js API，让项目能够一键接入、一键扫描、一键修复、一键升级，并为项目配置 git commit 卡点，降低项目实施规范的成本`,
+    `${PKG_NAME} 是 前端编码规范工程化 的配套 Lint 工具，提供简单的 CLI 和 Node.js API，让项目能够一键接入、一键扫描、一键修复、一键升级，并为项目配置 git commit 卡点，降低项目实施规范的成本`,
   );
 
 program

@@ -1,7 +1,16 @@
+/*
+ * @Author: adorkable-wang
+ * @Date: 2024-04-06 15:52:53
+ * @FilePath: \coding-standard-engineering\packages\code-lint-cli\src\actions\init.ts
+ * @Description: 初始化 cli
+ * @module: inquirer 是一个用于创建命令行交互式界面的 Node.js 模块。
+ * @module: cross-spawn 是一个 Node.js 模块，用于跨平台地创建子进程。
+ */
 import path from 'path';
 import fs from 'fs-extra';
 import inquirer from 'inquirer';
 import spawn from 'cross-spawn';
+
 import update from './update';
 import npmType from '../utils/npm-type';
 import log from '../utils/log';
@@ -16,6 +25,7 @@ let step = 0;
  * 选择项目语言和框架
  */
 const chooseEslintType = async (): Promise<string> => {
+  // inquirer.prompt 是 inquirer 模块中的一个方法，用于向用户提出一个或多个问题，并接收用户输入的回答。
   const { type } = await inquirer.prompt({
     type: 'list',
     name: 'type',
@@ -69,6 +79,11 @@ const chooseEnablePrettier = async (): Promise<boolean> => {
   return enable;
 };
 
+// TODO 是否需要安装 commit cz 规范 commit message
+
+/**
+ * 进入到问答的形式
+ */
 export default async (options: InitOptions) => {
   const cwd = options.cwd || process.cwd();
   const isTest = process.env.NODE_ENV === 'test';
@@ -132,6 +147,7 @@ export default async (options: InitOptions) => {
   }
 
   // 更新 pkg.json
+  // 注入 scan 和 fix 命令
   pkg = fs.readJSONSync(pkgPath);
   // 在 `package.json` 中写入 `scripts`
   if (!pkg.scripts) {

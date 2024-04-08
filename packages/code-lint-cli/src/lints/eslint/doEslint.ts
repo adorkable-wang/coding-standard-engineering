@@ -1,6 +1,14 @@
+/*
+ * @Author: adorkable-wang
+ * @Date: 2024-04-06 15:52:53
+ * @FilePath: \coding-standard-engineering\packages\code-lint-cli\src\lints\eslint\doESLint.ts
+ * @Description: 执行 eslint
+ * @module: fast-glob 是一个 Node.js 模块，用于在文件系统中进行快速的文件查找操作
+ */
 import { ESLint } from 'eslint';
 import fg from 'fast-glob';
 import { extname, join } from 'path';
+
 import { Config, PKG, ScanOptions } from '../../types';
 import { ESLINT_FILE_EXT, ESLINT_IGNORE_PATTERN } from '../../utils/constants';
 import { formatESLintResults } from './formatESLintResults';

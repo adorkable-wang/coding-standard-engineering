@@ -1,8 +1,17 @@
+/*
+ * @Author: adorkable-wang
+ * @Date: 2024-04-06 15:52:53
+ * @FilePath: \coding-standard-engineering\packages\code-lint-cli\src\utils\generate-template.ts
+ * @Description: 生成模板
+ * @module: glob 是一个 Node.js 模块，用于在文件系统中查找匹配指定模式的文件和目录路径。
+ * @module: ejs 模块是一个用于在 Node.js 环境中渲染 EJS（Embedded JavaScript）模板的模块
+ */
 import path from 'path';
 import fs from 'fs-extra';
 import _ from 'lodash';
 import glob from 'glob';
 import ejs from 'ejs';
+
 import {
   ESLINT_IGNORE_PATTERN,
   STYLELINT_FILE_EXT,

@@ -1,3 +1,10 @@
+/*
+ * @Author: adorkable-wang
+ * @Date: 2024-04-06 15:52:53
+ * @FilePath: \coding-standard-engineering\packages\code-lint-cli\src\types.ts
+ * @Description: 
+ * @module: 
+ */
 import { ESLint } from 'eslint';
 import stylelint from 'stylelint';
 import markdownlint from 'markdownlint';
@@ -45,7 +52,7 @@ export interface ScanOptions {
   fix?: boolean;
   // 生成报告文件
   outputReport?: boolean;
-  // scan 时指定 encode-fe-lint config，优先级高于 encode-fe-lint.config.js
+  // scan 时指定 code-lint-cli config，优先级高于 code-lint-cli.config.js
   config?: Config;
 }
 
@@ -74,7 +81,7 @@ export interface ScanReport {
 
 export interface InitOptions {
   cwd: string;
-  // 是否检查并升级 encode-fe-lint 的版本
+  // 是否检查并升级 code-lint-cli 的版本
   checkVersionUpdate: boolean;
   // 是否需要自动重写 lint 配置
   rewriteConfig?: boolean;

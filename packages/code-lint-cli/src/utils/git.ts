@@ -1,3 +1,10 @@
+/*
+ * @Author: adorkable-wang
+ * @Date: 2024-04-06 15:52:53
+ * @FilePath: \coding-standard-engineering\packages\code-lint-cli\src\utils\git.ts
+ * @Description: 
+ * @module: 
+ */
 import execa from 'execa';
 
 /**
@@ -6,7 +13,7 @@ import execa from 'execa';
  */
 export const getCommitFiles = async (options: execa.Options = {}): Promise<string[]> => {
   try {
-    const { stdout } = await execa(
+    const { stdout } = await execa.execa(
       'git',
       [
         'diff',
@@ -34,7 +41,7 @@ export const getCommitFiles = async (options: execa.Options = {}): Promise<strin
  */
 export const getAmendFiles = async (options: execa.Options = {}): Promise<string> => {
   try {
-    const { stdout } = await execa(
+    const { stdout } = await execa.execa(
       'git',
       [
         'diff', // 比较 工作区 与 暂缓区的差别

@@ -1,24 +1,27 @@
+/*
+ * @Author: adorkable-wang
+ * @Date: 2024-04-06 15:52:53
+ * @FilePath: \coding-standard-engineering\packages\code-lint-cli\src\utils\constants.ts
+ * @Description: 常量存储
+ */
 import path from 'path';
 import fs from 'fs-extra';
-
-// 读取 package.json
-const pkg: Record<string, any> = JSON.parse(
-  fs.readFileSync(path.join(__dirname, '../../package.json'), 'utf8'),
-);
 
 export enum UNICODE {
   success = '\u2714', // ✔
   failure = '\u2716', // ✖
 }
 
-/**
- * 包名
- */
-export const PKG_NAME: string = pkg.name;
+// 读取 package.json
+const pkg: Record<string, any> = JSON.parse(
+  fs.readFileSync(path.join(__dirname, '../../package.json'), 'utf8'),
+);
 
 /**
- * 包版本号
+ * PKG_NAME：包名
+ * PKG_VERSION：包版本号
  */
+export const PKG_NAME: string = pkg.name;
 export const PKG_VERSION: string = pkg.version;
 
 /**

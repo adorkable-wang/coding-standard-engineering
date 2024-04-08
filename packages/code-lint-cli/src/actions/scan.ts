@@ -1,5 +1,13 @@
+/*
+ * @Author: adorkable-wang
+ * @Date: 2024-04-06 15:52:53
+ * @FilePath: \coding-standard-engineering\packages\code-lint-cli\src\actions\scan.ts
+ * @Description: 扫描代码
+ * @module: 
+ */
 import fs from 'fs-extra';
 import path from 'path';
+
 import { doESLint, doMarkdownlint, doPrettier, doStylelint } from '../lints';
 import type { Config, PKG, ScanOptions, ScanReport, ScanResult } from '../types';
 import { PKG_NAME } from '../utils/constants';
@@ -13,6 +21,7 @@ export default async (options: ScanOptions): Promise<ScanReport> => {
   };
   const pkg: PKG = readConfigFile('package.json');
   const config: Config = scanConfig || readConfigFile(`${PKG_NAME}.config.js`);
+  
   const runErrors: Error[] = [];
   let results: ScanResult[] = [];
 

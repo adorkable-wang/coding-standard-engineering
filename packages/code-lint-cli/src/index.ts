@@ -1,3 +1,10 @@
+/*
+ * @Author: adorkable-wang
+ * @Date: 2024-04-06 15:52:53
+ * @FilePath: \coding-standard-engineering\packages\code-lint-cli\src\index.ts
+ * @Description: 入口文件
+ * @module: ora 是一个用于在终端中显示加载状态的 Node.js 模块
+ */
 import ora from 'ora';
 import scanAction from './actions/scan';
 import initAction from './actions/init';
@@ -7,6 +14,11 @@ import type { InitOptions, ScanOptions } from './types';
 
 type IInitOptions = Omit<InitOptions, 'checkVersionUpdate'>;
 
+/**
+ * @description: 初始化 action
+ * @param {IInitOptions} options
+ * @return {*}
+ */
 export const init = async (options: IInitOptions) => {
   return await initAction({
     ...options,

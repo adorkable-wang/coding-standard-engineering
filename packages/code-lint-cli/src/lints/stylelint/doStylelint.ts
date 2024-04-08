@@ -1,6 +1,14 @@
+/*
+ * @Author: adorkable-wang
+ * @Date: 2024-04-06 15:52:53
+ * @FilePath: \coding-standard-engineering\packages\code-lint-cli\src\lints\stylelint\doStylelint.ts
+ * @Description: 执行 stylelint
+ * @module: fast-glob 是一个 Node.js 模块，用于在文件系统中进行快速的文件查找操作
+ */
 import fg from 'fast-glob';
 import { extname, join } from 'path';
 import stylelint from 'stylelint';
+
 import { PKG, ScanOptions } from '../../types';
 import { STYLELINT_FILE_EXT, STYLELINT_IGNORE_PATTERN } from '../../utils/constants';
 import { formatStylelintResults } from './formatStylelintResults';

@@ -1,15 +1,27 @@
+/*
+ * @Author: adorkable-wang
+ * @Date: 2024-04-06 15:52:53
+ * @FilePath: \coding-standard-engineering\packages\code-lint-cli\src\actions\update.ts
+ * @Description: 判断文档是否更新
+ * @module: child_process 是 Node.js 提供的一个模块，用于在 Node.js 程序中执行外部进程。
+ * @module: execSync 是 child_process 模块提供的一个同步执行命令的函数
+ * @module: ora 是一个用于在终端中显示加载状态的 Node.js 模块
+ */
 import { execSync } from 'child_process';
 import ora from 'ora';
+
 import npmType from '../utils/npm-type';
 import log from '../utils/log';
 import { PKG_NAME, PKG_VERSION } from '../utils/constants';
 
 /**
- * 检查最新版本号
+ * @description: 检查最新的版本号
+ * @param {*} Promise
+ * @return {*}
  */
 const checkLatestVersion = async (): Promise<string | null> => {
   const npm = await npmType;
-
+  // 获取最新版本号
   const latestVersion = execSync(`${npm} view ${PKG_NAME} version`).toString('utf-8').trim();
 
   if (latestVersion === PKG_VERSION) return null;

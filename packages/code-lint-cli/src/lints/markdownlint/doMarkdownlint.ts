@@ -1,8 +1,16 @@
+/*
+ * @Author: adorkable-wang
+ * @Date: 2024-04-06 15:52:53
+ * @FilePath: \coding-standard-engineering\packages\code-lint-cli\src\lints\markdownlint\doMarkdownlint.ts
+ * @Description: 执行 markdownlint
+ * @module: fast-glob 是一个 Node.js 模块，用于在文件系统中进行快速的文件查找操作
+ */
 import fg from 'fast-glob';
 import { readFile, writeFile } from 'fs-extra';
 import markdownlint, { LintError } from 'markdownlint';
 import markdownlintRuleHelpers from 'markdownlint-rule-helpers';
 import { extname, join } from 'path';
+
 import { Config, PKG, ScanOptions } from '../../types';
 import { MARKDOWN_LINT_FILE_EXT, MARKDOWN_LINT_IGNORE_PATTERN } from '../../utils/constants';
 import { formatMarkdownlintResults } from './formatMarkdownlintResults';

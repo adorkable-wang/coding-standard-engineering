@@ -1,7 +1,16 @@
+/*
+ * @Author: adorkable-wang
+ * @Date: 2024-04-06 15:52:53
+ * @FilePath: \coding-standard-engineering\packages\code-lint-cli\src\utils\conflict-resolve.ts
+ * @Description: 解决版本冲突
+ * @module: glob 是一个 Node.js 模块，用于在文件系统中查找匹配指定模式的文件和目录路径。
+ * @module: inquirer 是一个用于创建命令行交互式界面的 Node.js 模块。
+ */
 import path from 'path';
 import fs from 'fs-extra';
 import glob from 'glob';
 import inquirer from 'inquirer';
+
 import log from './log';
 import { PKG_NAME } from './constants';
 import type { PKG } from '../types';
@@ -64,6 +73,7 @@ export default async (cwd: string, rewriteConfig?: boolean) => {
     Object.keys(pkg.dependencies || {}),
     Object.keys(pkg.devDependencies || []),
   );
+
   const willRemovePackage = dependencies.filter(
     (name) =>
       packageNamesToRemove.includes(name) ||
