@@ -2,7 +2,7 @@
 # adorkable-wang-stylelint-config
 
 :::tip
-印客学院 CSS 规范
+ CSS 规范
 :::
 
 支持配套的 [stylelint 可共享配置](https://stylelint.io/user-guide/configure)。
