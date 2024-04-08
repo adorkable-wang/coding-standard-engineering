@@ -30,7 +30,7 @@
 | ----------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
 | JavaScript 编码规范 <br/> TypeScript 编码规范 <br/> Node 编码规范 | [ESLint](https://eslint.org/)                                  | [adorkable-wang-eslint-config](https://www.npmjs.com/package/adorkable-wang-eslint-config)             |
 | CSS 编码规范                                                      | [stylelint](https://stylelint.io/)                             | [adorkable-wang-stylelint-config](https://www.npmjs.com/package/adorkable-wang-stylelint-config)       |
-| Git 规范                                                          | [commitlint](https://commitlint.js.org/#/)                     | [commitlint-config-encode](https://www.npmjs.com/package/commitlint-config-encode)     |
+| Git 规范                                                          | [commitlint](https://commitlint.js.org/#/)                     | [adorkable-wang-commitlint-config](https://www.npmjs.com/package/adorkable-wang-commitlint-config)     |
 | 文档规范                                                          | [markdownlint](https://github.com/DavidAnson/markdownlint)     | [adorkable-wang-markdownlint-config](https://www.npmjs.com/package/adorkable-wang-markdownlint-config) |
 | Eslint 插件                                                       | [ESlint Plugin](https://eslint.org/docs/latest/extend/plugins) | [eslint-plugin-encode](https://www.npmjs.com/package/eslint-plugin-encode)             |
 

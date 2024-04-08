@@ -1,5 +1,5 @@
 
-# commitlint-config-encode
+# adorkable-wang-commitlint-config
 
 :::tip
  Git 规范
@@ -12,7 +12,7 @@
 使用时，需要安装 [@commitlint/cli](https://www.npmjs.com/package/@commitlint/cli)：
 
 ```bash
-npm install commitlint-config-encode @commitlint/cli --save-dev
+npm install adorkable-wang-commitlint-config @commitlint/cli --save-dev
 ```
 
 ## 使用

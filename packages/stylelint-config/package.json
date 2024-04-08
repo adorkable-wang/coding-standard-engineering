@@ -29,5 +29,6 @@
     "jest": "^29.7.0",
     "stylelint": "^16.3.1",
     "stylelint-scss": "^6.2.1"
-  }
+  },
+  "gitHead": "5d6d07a4e0cdb8a3661d764de007d1050d163f97"
 }
