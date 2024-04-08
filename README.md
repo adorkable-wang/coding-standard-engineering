@@ -28,15 +28,15 @@
 
 | 规范                                                              | Lint 工具                                                      | npm 包                                                                                 |
 | ----------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| JavaScript 编码规范 <br/> TypeScript 编码规范 <br/> Node 编码规范 | [ESLint](https://eslint.org/)                                  | [eslint-config-encode](https://www.npmjs.com/package/eslint-config-encode)             |
-| CSS 编码规范                                                      | [stylelint](https://stylelint.io/)                             | [stylelint-config-encode](https://www.npmjs.com/package/stylelint-config-encode)       |
+| JavaScript 编码规范 <br/> TypeScript 编码规范 <br/> Node 编码规范 | [ESLint](https://eslint.org/)                                  | [adorkable-wang-eslint-config](https://www.npmjs.com/package/adorkable-wang-eslint-config)             |
+| CSS 编码规范                                                      | [stylelint](https://stylelint.io/)                             | [adorkable-wang-stylelint-config](https://www.npmjs.com/package/adorkable-wang-stylelint-config)       |
 | Git 规范                                                          | [commitlint](https://commitlint.js.org/#/)                     | [commitlint-config-encode](https://www.npmjs.com/package/commitlint-config-encode)     |
-| 文档规范                                                          | [markdownlint](https://github.com/DavidAnson/markdownlint)     | [markdownlint-config-encode](https://www.npmjs.com/package/markdownlint-config-encode) |
+| 文档规范                                                          | [markdownlint](https://github.com/DavidAnson/markdownlint)     | [adorkable-wang-markdownlint-config](https://www.npmjs.com/package/adorkable-wang-markdownlint-config) |
 | Eslint 插件                                                       | [ESlint Plugin](https://eslint.org/docs/latest/extend/plugins) | [eslint-plugin-encode](https://www.npmjs.com/package/eslint-plugin-encode)             |
 
-[encode-fe-lint](https://www.npmjs.com/package/encode-fe-lint) 收敛屏蔽了上述依赖和配置细节，提供简单的 `CLI` 和 `Node.js API`，让项目能够一键接入、一键扫描、一键修复、一键升级，并为项目配置 git commit 卡口，降低项目接入规范的成本。
+[code-lint-cli](https://www.npmjs.com/package/code-lint-cli) 收敛屏蔽了上述依赖和配置细节，提供简单的 `CLI` 和 `Node.js API`，让项目能够一键接入、一键扫描、一键修复、一键升级，并为项目配置 git commit 卡口，降低项目接入规范的成本。
 
-您可以使用[encode-fe-lint](https://www.npmjs.com/package/encode-fe-lint) 方便地为项目接入全部规范。
+您可以使用[code-lint-cli](https://www.npmjs.com/package/code-lint-cli) 方便地为项目接入全部规范。
 
 ## 其他
 

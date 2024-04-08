@@ -1,5 +1,5 @@
 {
-  "name": "adorkable_wang_commitlint-config",
+  "name": "adorkable-wang-commitlint-config",
   "version": "1.0.1",
   "main": "index.js",
   "description": "Git 规范",

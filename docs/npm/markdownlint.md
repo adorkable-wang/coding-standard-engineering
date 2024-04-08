@@ -1,5 +1,5 @@
 
-# markdownlint-config-encode
+# adorkable-wang-markdownlint-config
 
 :::tip
 印客学院 文档 规范
@@ -18,7 +18,7 @@ npm install -g markdownlint-cli
 再安装 [markdownlint](https://www.npmjs.com/package/markdownlint)：
 
 ```bash
-npm install markdownlint-config-encode markdownlint --save-dev
+npm install adorkable-wang-markdownlint-config markdownlint --save-dev
 ```
 
 ## 使用
@@ -27,6 +27,6 @@ npm install markdownlint-config-encode markdownlint --save-dev
 
 ```json
 {
-  "extends": "markdownlint-config-encode"
+  "extends": "adorkable-wang-markdownlint-config"
 }
 ```

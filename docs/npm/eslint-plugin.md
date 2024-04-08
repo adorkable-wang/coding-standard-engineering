@@ -14,7 +14,7 @@ npm install eslint-plugin-encode eslint --save-dev
 ```js
 // .eslintrc.js
 module.exports = {
-  plugin: ['eslint-config-encode'],
+  plugin: ['adorkable-wang-eslint-config'],
   rules: {
     'eslint-plugin-encode/no-secret-info': 'error',
   },

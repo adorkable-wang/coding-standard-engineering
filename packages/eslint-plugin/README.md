@@ -15,7 +15,7 @@ npm install eslint-plugin-encode eslint --save-dev
 ```js
 // .eslintrc.js
 module.exports = {
-  plugin: ['eslint-config-encode'],
+  plugin: ['adorkable-wang-eslint-config'],
   rules: {
     'eslint-plugin-encode/no-secret-info': 'error',
   },
@@ -36,4 +36,4 @@ module.exports = {
 - [`no-broad-semantic-versioning`](https://encode-studio-fe.github.io/fe-spec/plugin/no-broad-semantic-versioning.html) 不要指定宽泛的版本范围
 - [`no-http-url`](https://encode-studio-fe.github.io/fe-spec/plugin/no-http-url.html) 使用 HTTPS 协议头的 URL，而不是 HTTP
 - [`no-js-in-ts-project`](https://encode-studio-fe.github.io/fe-spec/plugin/no-js-in-ts-project.html) 不要在 TS 项目中使用 JS
-- [`no-secret-info`](https://encode-studio-fe.github.io/fe-spec/plugin/no-secret-info.html) 不要在代码中直接设置 `password` `token` and `secret` 信息
+- [`no-secret-info`](https://encode-studio-fe.github.io/fe-spec/npm/eslint-plugin.html#%E6%94%AF%E6%8C%81%E7%9A%84%E8%A7%84%E5%88%99) 不要在代码中直接设置 `password` `token` and `secret` 信息

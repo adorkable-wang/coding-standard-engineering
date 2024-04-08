@@ -1,5 +1,5 @@
 
-# stylelint-config-encode
+# adorkable-wang-stylelint-config
 
 :::tip
 印客学院 CSS 规范
@@ -12,7 +12,7 @@
 需要先行安装 [stylelint](https://www.npmjs.com/package/stylelint) 和 [stylelint-scss](https://www.npmjs.com/package/stylelint-scss)：
 
 ```bash
-npm install stylelint-config-encode stylelint stylelint-scss --save-dev
+npm install adorkable-wang-stylelint-config stylelint stylelint-scss --save-dev
 ```
 
 ## 使用
@@ -21,6 +21,6 @@ npm install stylelint-config-encode stylelint stylelint-scss --save-dev
 
 ```json
 {
-  "extends": "stylelint-config-encode"
+  "extends": "adorkable-wang-stylelint-config"
 }
 ```

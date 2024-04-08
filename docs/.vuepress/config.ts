@@ -34,16 +34,16 @@ export default defineConfig4CustomTheme({
       {
         text: 'NPM 包',
         items: [
-          { text: 'eslint-config-encode', link: '/npm/eslint.md' },
-          { text: 'stylelint-config-encode', link: '/npm/stylelint.md' },
+          { text: 'adorkable-wang-eslint-config', link: '/npm/eslint.md' },
+          { text: 'adorkable-wang-stylelint-config', link: '/npm/stylelint.md' },
           { text: 'commitlint-config-encode', link: '/npm/commitlint.md' },
-          { text: 'markdownlint-config-encode', link: '/npm/markdownlint.md' },
+          { text: 'adorkable-wang-markdownlint-config', link: '/npm/markdownlint.md' },
           { text: 'eslint-plugin-encode', link: '/npm/eslint-plugin.md' },
         ],
       },
       {
         text: '脚手架',
-        items: [{ text: 'encode-fe-lint', link: '/cli/encode-fe-lint.md' }],
+        items: [{ text: 'code-lint-cli', link: '/cli/code-lint-cli.md' }],
       },
     ],
     sidebar: [
@@ -92,16 +92,16 @@ export default defineConfig4CustomTheme({
       {
         title: 'NPM包',
         children: [
-          { title: 'eslint-config-encode', path: '/npm/eslint.md' },
-          { title: 'stylelint-config-encode', path: '/npm/stylelint.md' },
+          { title: 'adorkable-wang-eslint-config', path: '/npm/eslint.md' },
+          { title: 'adorkable-wang-stylelint-config', path: '/npm/stylelint.md' },
           { title: 'commitlint-config-encode', path: '/npm/commitlint.md' },
-          { title: 'markdownlint-config-encode', path: '/npm/markdownlint.md' },
+          { title: 'adorkable-wang-markdownlint-config', path: '/npm/markdownlint.md' },
           { title: 'eslint-plugin-encode', path: '/npm/eslint-plugin.md' },
         ],
       },
       {
         title: '脚手架',
-        children: [{ title: 'encode-fe-lint', path: '/cli/encode-fe-lint.md' }],
+        children: [{ title: 'code-lint-cli', path: '/cli/code-lint-cli.md' }],
       },
     ],
     logo: '/img/logo.png',
