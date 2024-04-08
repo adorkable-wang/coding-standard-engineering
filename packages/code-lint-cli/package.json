@@ -8,7 +8,6 @@
     "dev": "npm run copyfiles && tsc -w",
     "build": "rm -rf lib && npm run copyfiles && tsc",
     "copyfiles": "copyfiles -a -u 1 \"src/config/**\" lib",
-    "test": "npm run build && jest",
     "coverage": "nyc jest --silent --forceExit",
     "prepublishOnly": "npm run test"
   },
@@ -95,5 +94,5 @@
   "bugs": {
     "url": "https://github.com/adorkable-wang/coding-standard-engineering/issues"
   },
-  "gitHead": "78848b8681adb02ba6ad61f859916667af034b2b"
+  "gitHead": "1af75e6123b1051f8bdf7012bff0a1db35ef4ba8"
 }
