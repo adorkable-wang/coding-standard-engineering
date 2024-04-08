@@ -1,6 +1,6 @@
 {
   "name": "adorkable-wang-commitlint-config",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "main": "index.js",
   "description": "Git 规范",
   "keywords": [
