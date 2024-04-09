@@ -8,7 +8,7 @@ ruleTester.run('no-broad-semantic-versioning', rule, {
     {
       filename: 'package.json',
       code: `module.exports = ${JSON.stringify({
-        devDependencies: { 'eslint-plugin-encode': '^0.0.5' },
+        devDependencies: { 'adorkable-wang-eslint-plugin': '^1.0.1' },
       })}`,
     },
     {
@@ -21,11 +21,11 @@ ruleTester.run('no-broad-semantic-versioning', rule, {
     {
       filename: 'package.json',
       code: `module.exports = ${JSON.stringify({
-        devDependencies: { 'eslint-plugin-encode': '*' },
+        devDependencies: { 'adorkable-wang-eslint-plugin': '*' },
       })}`,
       errors: [
         {
-          message: 'The "eslint-plugin-encode" is not recommended to use "*"',
+          message: 'The "adorkable-wang-eslint-plugin" is not recommended to use "*"',
         },
       ],
     },

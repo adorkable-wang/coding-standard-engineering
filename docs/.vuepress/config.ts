@@ -38,7 +38,7 @@ export default defineConfig4CustomTheme({
           { text: 'adorkable-wang-stylelint-config', link: '/npm/stylelint.md' },
           { text: 'adorkable-wang-commitlint-config', link: '/npm/commitlint.md' },
           { text: 'adorkable-wang-markdownlint-config', link: '/npm/markdownlint.md' },
-          { text: 'eslint-plugin-encode', link: '/npm/eslint-plugin.md' },
+          { text: 'adorkable-wang-eslint-plugin', link: '/npm/eslint-plugin.md' },
         ],
       },
       {
@@ -96,7 +96,7 @@ export default defineConfig4CustomTheme({
           { title: 'adorkable-wang-stylelint-config', path: '/npm/stylelint.md' },
           { title: 'adorkable-wang-commitlint-config', path: '/npm/commitlint.md' },
           { title: 'adorkable-wang-markdownlint-config', path: '/npm/markdownlint.md' },
-          { title: 'eslint-plugin-encode', path: '/npm/eslint-plugin.md' },
+          { title: 'adorkable-wang-eslint-plugin', path: '/npm/eslint-plugin.md' },
         ],
       },
       {

@@ -5,7 +5,7 @@
 除了本包，你需要同时安装 [ESlint](https://eslint.org/)
 
 ```shell
-npm install eslint-plugin-encode eslint --save-dev
+npm install adorkable-wang-eslint-plugin eslint --save-dev
 ```
 
 ## 使用
@@ -17,7 +17,7 @@ npm install eslint-plugin-encode eslint --save-dev
 module.exports = {
   plugin: ['adorkable-wang-eslint-config'],
   rules: {
-    'eslint-plugin-encode/no-secret-info': 'error',
+    'adorkable-wang-eslint-plugin/no-secret-info': 'error',
   },
 };
 ```
@@ -27,7 +27,7 @@ module.exports = {
 ```js
 // .eslintrc.js
 module.exports = {
-  extends: 'plugin:eslint-plugin-encode/recommended',
+  extends: 'plugin:adorkable-wang-eslint-plugin/recommended',
 };
 ```
 
